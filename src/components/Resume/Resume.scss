@@ -1,3 +1,113 @@
 .text {
   color: #e3d2b6;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 36px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.contact-info__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #e3d2b6;
+}
+
+.contact-info__item {
+  color: #e3d2b6;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.core-competencies {
+  margin-top: 20px;
+}
+
+.core-competencies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.core-competencies li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:600);
+
+.rotating-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #e3d2b6;
+  transform: translateX(-80px);
+
+  p {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+
+    .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+      padding-left: 8px;
+
+      .letter {
+        transform-origin: center center 25px;
+
+        &.out {
+          transform: rotateX(90deg);
+          transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+        }
+        &.in {
+          transition: 0.38s ease;
+        }
+        &.behind {
+          transform: rotateX(-90deg);
+        }
+      }
+    }
+  }
+}
+
+// palette: https://flatuicolors.com/palette/defo
+.alizarin {
+  color: #e74c3c;
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.peter-river {
+  color: #3498db;
+}
+
+.emerald {
+  color: #2ecc71;
+}
+
+.sun-flower {
+  color: #f1c40f;
+}
