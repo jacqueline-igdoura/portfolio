@@ -1,5 +1,5 @@
 .page-header {
-  color: #e3d2b6;
+  color: var(--text-color);
   display: flex;
   align-items: center;
 }
@@ -10,11 +10,11 @@
 
 .main-nav {
   display: flex;
-  color: #e3d2b6;
+  color: var(--text-color);
 }
 
 .main-nav .list-item a {
-  color: #e3d2b6;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .main-nav .list-item a.active {
-  color: #e3d2b6;
+  color: var(--text-color);
   text-decoration: none;
   position: relative;
   z-index: 1;

@@ -1,7 +1,20 @@
+.name,
+.location,
+.contact-info__items {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .text {
-  color: #e3d2b6;
+  color: var(--text-color);
 }
 
+.name {
+  margin-bottom: 0px;
+}
+.location {
+  margin-bottom: 0px;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -11,7 +24,6 @@
 }
 
 .contact-info {
-  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -19,11 +31,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  color: #e3d2b6;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 4px;
 }
 
 .contact-info__item {
-  color: #e3d2b6;
+  color: var(--text-color);
   text-decoration: none;
 
   &:hover {
@@ -59,7 +73,7 @@
   font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 36px;
-  color: #e3d2b6;
+  color: var(--text-color);
   transform: translateX(-80px);
 
   p {

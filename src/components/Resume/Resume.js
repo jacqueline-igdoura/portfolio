@@ -53,9 +53,9 @@ function Resume() {
       <div>
         <h1 className="text">Resume</h1>
         <div className="container text">
-          <h1>{resumeData.name}</h1>
+          <h1 className="name">{resumeData.name}</h1>
           <div className="contact-info">
-            <p>{resumeData.location}</p>
+            <p className="location">{resumeData.location}</p>
             <p className="contact-info__items">
               <a
                 className="contact-info__item"
@@ -77,7 +77,7 @@ function Resume() {
             </p>
           </div>
           <div className="core-competencies">
-            <h2 className="section-title">Core Competencies</h2>
+            <h2 className="section-title">Technical Skills</h2>
             <ul>
               {resumeData.technicalSkills &&
                 Object.entries(resumeData.technicalSkills).map(

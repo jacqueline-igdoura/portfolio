@@ -1,12 +1,10 @@
 import "./Projects.scss";
 
-import React from "react";
-
 function Projects() {
   return (
-    <div>
-      <h1 className="text">Projects</h1>
-      <p className="text">This is the Projects page.</p>
+    <div className="projects-container">
+      <h2>GitHub Projects</h2>
+      <div className="projects-grid"></div>
     </div>
   );
 }

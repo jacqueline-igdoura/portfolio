@@ -1,4 +1,14 @@
 html {
-  background-color: #140d00;
+  background-color: var(--bg-color);
   margin: 0px 24px;
+}
+
+:root {
+  --bg-color: #140d00;
+  --text-color: #e3d2b6;
+}
+
+[data-theme="light"] {
+  --bg-color: #e3d2b6;
+  --text-color: #140d00;
 }
