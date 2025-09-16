@@ -2,6 +2,11 @@
   color: var(--text-color);
 }
 
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .intro {
   margin-bottom: 1em;
   display: block;
