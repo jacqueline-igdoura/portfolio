@@ -1,0 +1,148 @@
+{
+  "name": "Jacqueline Igdoura",
+  "location": "View, California, USA",
+  "email": "jacqueline.igdoura@gmail.com",
+  "github": "",
+  "technicalSkills": {
+    "Languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Ruby",
+      "SQL"
+    ],
+    "Frontend": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Ionic",
+      "Redux",
+      "NgRx"
+    ],
+    "Backend": [
+      "Django",
+      "Ruby on Rails",
+      "Sinatra",
+      "Node.js",
+      "Golang"
+    ],
+    "UI/UX & Styling": [
+      "Figma",
+      "Tailwind",
+      "Material UI",
+      "Bootstrap",
+      "SASS"
+    ],
+    "Testing": [
+      "Cypress",
+      "Jest",
+      "Storybook"
+    ],
+    "DevOps & Tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Jira"
+    ],
+    "Mobile": [
+      "React Native",
+      "iOS",
+      "Android"
+    ],
+    "Practices": [
+      "TDD",
+      "Agile",
+      "Reusable Components",
+      "Accessibility Compliance"
+    ],
+    "Cloud & APIs": [
+      "Google Cloud",
+      "REST",
+      "GraphQL",
+      "Axios",
+      "Lodash"
+    ]
+  },
+  "experience": {
+    "Descartes Systems Group": [
+      {
+        "job title": "Software Developer II",
+        "location": [
+          "Mountain View, CA"
+        ],
+        "dates": [
+          "Oct 2023 – Present."
+        ],
+        "responsibilities": [
+          "Drove modernization efforts to reduce technical debt, improve maintainability, and boost system performance across front-end and back-end components.",
+          "Established testing using Jest for unit and integration tests, significantly increasing test coverage and reducing regressions during modernization and migrations.",
+          "Collaborated cross-functionally with Design, Engineering, and Product teams to align technical solutions with business goals and deliver a significantly improved customer experience.",
+          "Tech: Vue.js, Django, Python, JavaScript, Docker, Bootstrap, GitHub"
+        ]
+      }
+    ],
+    "KOHO": [
+      {
+        "job title": "Frontend Software Developer I",
+        "location": [
+          "Toronto, ON"
+        ],
+        "dates": [
+          "Feb 2021 – Sep 2023"
+        ],
+        "responsibilities": [
+          "Delivered cross-platform mobile applications for iOS and Android with a strong focus on performance, stability, and user experience.",
+          "Developed a reusable component library, accelerating development velocity and ensuring UI consistency across multiple projects.",
+          "Built internal admin tools to automate and streamline customer support workflows, reducing manual overhead and improving response times.",
+          "Influenced product direction by contributing to UI/UX enhancements through ongoing design reviews, usability testing, and collaborative feedback cycles.",
+          "Tech: React, Ionic, TypeScript, Angular, Redux, NgRx, Cypress, Tailwind, Storybook, Golang"
+        ]
+      }
+    ],
+    "Fairly.AI": [
+      {
+        "job title": "Software Developer",
+        "location": [
+          "Kingston, ON"
+        ],
+        "dates": [
+          "Dec 2020 – Feb 2021"
+        ],
+        "responsibilities": [
+          "Sole frontend developer responsible for building fully responsive and accessible web interfaces, optimizing workflows for scalability.",
+          "Supported backend development and Google Cloud integrations.",
+          "Improved analytics and user data tracking with custom Google Analytics/Cloud Proxy setup.",
+          "Tech: React, JavaScript, Redux, Material UI, Google Cloud, Python"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "Lighthouse Labs": [
+      {
+        "degree": "Diploma",
+        "location": [
+          "in Full-Stack Web Development Toronto, ON"
+        ],
+        "dates": [
+          "Sept 2020 – Dec 2020"
+        ],
+        "details": [
+          "Completed midterm and final projects in team-based settings."
+        ]
+      }
+    ],
+    "McMaster University": [
+      {
+        "degree": "B.A.",
+        "location": [
+          "in Social Psychology Hamilton, ON"
+        ],
+        "dates": [
+          "Sept 2014 – Apr 2019"
+        ],
+        "details": []
+      }
+    ]
+  }
+}

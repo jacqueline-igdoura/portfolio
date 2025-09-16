@@ -49,93 +49,40 @@ function Resume() {
           <span class="word sun-flower">awesome.</span>
         </p>
       </div>
-      <div class="container text">
-        <h1>Jacqueline Igdoura</h1>
-        <div class="contact-info">
-          <p>Mountain View, California, USA</p>
-          <p class="contact-info__items">
-            <a
-              class="contact-info__item"
-              href="mailto:jacqueline.igdoura@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              jacqueline.igdoura@gmail.com
-            </a>{" "}
-            |{" "}
-            <a
-              class="contact-info__item"
-              href="https://github.com/jacqueline-igdoura"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>{" "}
-            |{" "}
-            <a
-              class="contact-info__item"
-              href="https://www.linkedin.com/in/jacqueline-igdoura/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </p>
-        </div>
-
-        <div class="professional-summary">
-          <h2 class="section-title">Professional Summary</h2>
-          <p>
-            I am a results-driven software developer who is passionate about the
-            intersection between technology and social psychology. I specialize
-            in building intuitive web and mobile apps from a user-first
-            perspective while working cross-functionally to create innovative
-            solutions. I enjoy leveraging new technologies to create innovative
-            solutions and am eager to contribute my skills in frontend
-            development, testing, and full-stack solutions to an equally
-            passionate team.
-          </p>
-        </div>
-
-        <div class="core-competencies">
-          <h2 class="section-title">Core Competencies</h2>
-          <ul>
-            <li>
-              <strong>Frontend Frameworks:</strong> React, Angular, Vue.js,
-              Ionic
-            </li>
-            <li>
-              <strong>Backend Technologies:</strong> Python, Ruby on Rails,
-              Sinatra, Django, Node.js
-            </li>
-            <li>
-              <strong>Languages:</strong> JavaScript, TypeScript, Python, Ruby,
-              SQL
-            </li>
-            <li>
-              <strong>UI/UX:</strong> Figma, Storybook, Material UI, Tailwind,
-              Bootstrap, SASS
-            </li>
-            <li>
-              <strong>Testing & Automation:</strong> Cypress, Jest, Storybook
-            </li>
-            <li>
-              <strong>Version Control & CI/CD:</strong> Git, GitHub, Docker,
-              Jira
-            </li>
-            <li>
-              <strong>Mobile Development:</strong> iOS, Android, React Native,
-              Ionic
-            </li>
-            <li>
-              <strong>Development Practices:</strong> Accessibility Compliance,
-              Agile, Test-Driven Development, Reusable Components
-            </li>
-            <li>
-              <strong>Additional:</strong> Redux, NgRx, Lodash, REST, GraphQL,
-              Google Cloud
-            </li>
-          </ul>
+      <div>
+        <h1 className="text">Resume</h1>
+        <div className="container text">
+          <h1>{resumeData.name}</h1>
+          <div className="contact-info">
+            <p>{resumeData.location}</p>
+            <p className="contact-info__items">
+              <a
+                className="contact-info__item"
+                href={`mailto:${resumeData.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {resumeData.email}
+              </a>{" "}
+              |{" "}
+              <a
+                className="contact-info__item"
+                href={resumeData.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div className="core-competencies">
+            <h2 className="section-title">Core Competencies</h2>
+            <ul>
+              {resumeData.coreCompetencies.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div class="professional-experience">
