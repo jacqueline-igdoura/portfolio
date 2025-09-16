@@ -19,12 +19,45 @@
 }
 
 .main-nav .list-item a:hover {
-  text-decoration: underline;
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav .list-item a:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 60px;
+  background-image: url("../../assets/coffee-splatter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .main-nav .list-item a.active {
   color: #e3d2b6;
-  text-decoration: underline;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav .list-item a.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 60px;
+  background-image: url("../../assets/coffee-splatter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .list-item {
