@@ -14,18 +14,8 @@ mammoth
     const name = nameMatch ? nameMatch[1].trim() : "";
 
     // LOCATION
-    const locationMatch = text.match(/([A-Za-z]+, [A-Za-z]+, [A-Za-z]+) \|/);
+    const locationMatch = text.match(/^\s*[^\n]+\s*\n\s*([^\n]+)\s*$/m);
     const location = locationMatch ? locationMatch[1].trim() : "";
-
-    // EMAIL
-    const emailMatch = text.match(
-      /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/
-    );
-    const email = emailMatch ? emailMatch[1].trim() : "";
-
-    // GITHUB
-    const githubMatch = text.match(/(https?:\/\/github.com\/[^\s\n]+)/i);
-    const github = githubMatch ? githubMatch[1].trim() : "";
 
     // TECHNICAL SKILLS
     const techSkillsMatch = text.match(
@@ -137,8 +127,6 @@ mammoth
     const resumeJson = {
       name,
       location,
-      email,
-      github,
       technicalSkills,
       experience,
       education,
