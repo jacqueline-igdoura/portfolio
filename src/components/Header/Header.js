@@ -55,6 +55,14 @@ function Header() {
                 Resume
               </NavLink>
             </li>
+            <li className="list-item">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <span className="coffee-label">How do you like your coffee?</span>

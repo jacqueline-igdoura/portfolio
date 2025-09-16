@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
 import "./Projects.scss";
 
 function ProjectCard({ image, title, githubUrl, alt, description }) {
@@ -7,7 +6,10 @@ function ProjectCard({ image, title, githubUrl, alt, description }) {
     <>
       <h3 className="project-title">{title}</h3>
       {image && <img src={image} alt={alt || title} className="project-img" />}
-      <div className="project-card-footer" style={{ display: "flex", alignItems: "center", gap: "0.5em" }}>
+      <div
+        className="project-card-footer"
+        style={{ display: "flex", alignItems: "center", gap: "0.5em" }}
+      >
         {description && (
           <span className="project-description">{description}</span>
         )}
@@ -26,9 +28,7 @@ function ProjectCard({ image, title, githubUrl, alt, description }) {
       {cardContent}
     </a>
   ) : (
-    <div className="project-card">
-      {cardContent}
-    </div>
+    <div className="project-card">{cardContent}</div>
   );
 }
 

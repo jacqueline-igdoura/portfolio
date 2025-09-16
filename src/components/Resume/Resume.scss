@@ -5,9 +5,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-.text {
-  color: var(--text-color);
-}
 
 .name,
 .location,
@@ -15,9 +12,6 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-.text {
-  color: var(--text-color);
 }
 
 .name {
@@ -54,11 +48,9 @@
   justify-content: center;
   margin-bottom: 0;
   margin-top: 4px;
-  color: var(--text-color);
 }
 
 .contact-info__item {
-  color: var(--text-color);
   text-decoration: none;
 
   &:hover {
