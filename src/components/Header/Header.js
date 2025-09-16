@@ -1,4 +1,3 @@
-import { FaSun, FaMoon } from "react-icons/fa";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 import React from "react";
@@ -42,14 +41,6 @@ function Header() {
             </li>
             <li className="list-item">
               <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                About Me
-              </NavLink>
-            </li>
-            <li className="list-item">
-              <NavLink
                 to="/projects"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
@@ -66,20 +57,28 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <span
-          onClick={toggleTheme}
-          style={{
-            cursor: "pointer",
-            fontSize: "2rem",
-            marginLeft: "1.5rem",
-            userSelect: "none",
-            display: "inline-flex",
-            alignItems: "center"
-          }}
-          aria-label="Toggle theme"
-        >
-          {theme === "dark" ? <FaMoon /> : <FaSun />}
-        </span>
+        <span className="coffee-label">How do you like your coffee?</span>
+        <div className="theme-toggle-switch" onClick={toggleTheme}>
+          <span
+            className="toggle-cylinder"
+            style={{
+              left: theme === "light" ? 0 : "calc(100% - 48px)",
+              background: theme === "light" ? "#fff" : "#333",
+            }}
+          ></span>
+          <span
+            className="toggle-cream"
+            style={{ color: theme === "light" ? "#222" : "#888" }}
+          >
+            cream
+          </span>
+          <span
+            className="toggle-black"
+            style={{ color: theme === "dark" ? "#fff" : "#888" }}
+          >
+            black
+          </span>
+        </div>
       </header>
     </div>
   );

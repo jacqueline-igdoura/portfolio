@@ -2,6 +2,23 @@
   color: var(--text-color);
 }
 
+.intro {
+  margin-bottom: 1em;
+  display: block;
+  content: "";
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
 .memoji {
   height: 20rem;
 }
@@ -9,4 +26,6 @@
 .page-split {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
 }
