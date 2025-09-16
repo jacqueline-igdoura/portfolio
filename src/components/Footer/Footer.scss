@@ -24,3 +24,17 @@
 .footer-icons a:hover {
   color: #4078c0;
 }
+
+.footer-cat {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5em;
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+
+.cat-coffee-gif {
+  height: 68px;
+  width: auto;
+  display: block;
+}
