@@ -5,10 +5,14 @@ html {
 
 :root {
   --bg-color: #140d00;
+  --secondary-bg-color: #e3d2b6;
   --text-color: #e3d2b6;
+  --secondary-text-color: #140d00;
 }
 
 [data-theme="light"] {
   --bg-color: #e3d2b6;
+  --secondary-bg-color: #140d00;
   --text-color: #140d00;
+  --secondary-text-color: #e3d2b6;
 }

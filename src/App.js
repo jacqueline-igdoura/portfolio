@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
+import Footer from "./components/Footer/Footer";
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route path="/resume" element={<Resume />} />
           {/* Add more routes here */}
         </Routes>
+        <Footer />
       </Router>
     );
   }
