@@ -1,13 +1,21 @@
 import "./Home.scss";
 
 import React from "react";
-import memoji from "../../assets/memoji.png";
+import pumpkin from "../../assets/me-and-pumpkin.jpg";
 
 function Home() {
   return (
     <div class="text home-container">
-      <div>
-        <img class="memoji" src={memoji} alt="" />
+      <div class="memoji-container">
+        <div class="arrow">
+          <div class="curve"></div>
+          <div class="point"></div>
+        </div>
+        <img class="memoji" src={pumpkin} alt="" />
+        <div class="arrow">
+          <div class="curve"></div>
+          <div class="point"></div>
+        </div>
       </div>
       <div>
         <h1 class="title">Hi, nice to meet you!</h1>
@@ -41,8 +49,10 @@ function Home() {
             creating code that’s clean, maintainable, and thoughtfully crafted.
           </p>
           <p class="intro">
-            My development philosophy? With time, effort, and curiosity —
-            anything is possible.{" "}
+            My development philosophy?{" "}
+            <strong>
+              With time, effort, and curiosity — anything is possible.
+            </strong>{" "}
           </p>
         </div>
       </div>

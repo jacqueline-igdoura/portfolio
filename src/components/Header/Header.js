@@ -6,13 +6,22 @@ import logoLightMode from "../../assets/logo-light-mode.png";
 
 function Header() {
   React.useEffect(() => {
-    if (!document.documentElement.getAttribute("data-theme")) {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      setTheme(savedTheme);
+    } else if (!document.documentElement.getAttribute("data-theme")) {
       document.documentElement.setAttribute("data-theme", "dark");
+      setTheme("dark");
     }
   }, []);
 
   function getTheme() {
-    return document.documentElement.getAttribute("data-theme") || "dark";
+    return (
+      localStorage.getItem("theme") ||
+      document.documentElement.getAttribute("data-theme") ||
+      "dark"
+    );
   }
   const [theme, setTheme] = React.useState(getTheme());
 
@@ -21,6 +30,7 @@ function Header() {
     const next = current === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
     setTheme(next);
+    localStorage.setItem("theme", next);
   }
 
   const logo = theme === "dark" ? logoDarkMode : logoLightMode;
